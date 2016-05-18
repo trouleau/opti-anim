@@ -23,6 +23,6 @@ Run ```pip install -r requirements.txt``` to install the dependencies.
 
 ## Demos
 
-To run the tutorial demos, run ```python anim.py --demo N``` where N can go from 1 to 10.
+To run the tutorial demos, run ```python anim.py --demo N``` where N can be an integer from 1 to 10.
 
 Note that the demos have been tested on Mac OS X. The backend used by matplotlib might need to be changed to work as expected on other platforms.
