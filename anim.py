@@ -12,7 +12,7 @@ import algorithms
 
 import core
 import util
-import config_test_functions as config
+import config
 
 METHODS = ['SGD', 'SGDsim', 'GD', 'LineSearchGD', 'MyLineSearchGD', 'LineSearch_SGD',
            'NAG', 'NAG2_SGD', 'Momentum', 'Momentum_SGD', 

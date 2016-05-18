@@ -7,8 +7,11 @@ This package provides an interface to experiment with the design of Gradient des
 * Conjugate gradient descent
 * Momentum
 * Nesterov accelerated gradient
+* AdaGrad
+* AdaDelta
+* ...
 
-These algorithms can be vizualized as 2d animations.
+All algorithms can be easily vizualized as 2d animations.
 
 ## Dependencies
 
