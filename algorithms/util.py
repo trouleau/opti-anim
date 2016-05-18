@@ -1,7 +1,5 @@
 import numpy as np
-
-import pandas as pd
-from sklearn import datasets
+import sys
 
 import core
 
@@ -45,6 +43,11 @@ def flatten(listoflist):
 
 
 def load_wine_dataset():
+    try:
+        import pandas as pd
+    except ImportError:
+        print "Scikit-learn requirement cannot be imported!"
+        sys.exit(1)
     print 'Loading Wine dataset...'
     header = ['label','Alcohol','Malic acid','Ash','Alcalinity of ash',
               'Magnesium','Total phenols','Flavanoids','Nonflavanoid phenols',
@@ -62,6 +65,11 @@ def load_wine_dataset():
     return wine_arr
 
 def load_iris_dataset():
+    try:
+        from sklearn import datasets
+    except ImportError:
+        print "Scikit-learn requirement cannot be imported!"
+        sys.exit(1)
     iris = datasets.load_iris()
     mask = iris.target < 2
     iris_arr = np.array([iris.target,iris.data[:,2]]).T[mask]
