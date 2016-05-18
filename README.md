@@ -15,7 +15,9 @@ All algorithms can be easily vizualized as 2d animations.
 
 ## Dependencies
 
-This project relies on Numpy & Scipy for computations and on Matplotlib for visualization.
+This package relies on Numpy & Scipy for computations and on Matplotlib for visualization.
+
+To load the real toy-example datasets, this package uses Pandas and Scikit-learn, but both dependencies are only required if the datasets are loaded.
 
 Run ```pip install -r requirements.txt``` to install the dependencies.
 
